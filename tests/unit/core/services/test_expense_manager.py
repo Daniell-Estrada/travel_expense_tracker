@@ -3,11 +3,11 @@ from unittest import TestCase
 from unittest.mock import MagicMock
 from uuid import uuid4
 
-from src.application.dto import ExpenseDTO
-from src.core.domain import Expense, Trip
-from src.core.enums import ExpenseType, PaymentMethod
-from src.core.exceptions import InactiveTripError, TripNotFoundError
-from src.core.services import ExpenseManager
+from application.dto import ExpenseDTO
+from core.domain import Expense, Trip
+from core.enums import ExpenseType, PaymentMethod
+from core.exceptions import InactiveTripError, TripNotFoundError
+from core.services import ExpenseManager
 
 
 class TestExpanseManager(TestCase):

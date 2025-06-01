@@ -1,11 +1,11 @@
 from datetime import date
 from uuid import UUID, uuid4
 
-from src.application.dto import ExpenseDTO
-from src.core.domain import Expense
-from src.core.exceptions import InactiveTripError
-from src.core.interfaces import CurrencyConverter
-from src.core.interfaces.repositories import ExpenseRepository, TripRepository
+from application.dto import ExpenseDTO
+from core.domain import Expense
+from core.exceptions import InactiveTripError
+from core.interfaces import CurrencyConverter
+from core.interfaces.repositories import ExpenseRepository, TripRepository
 
 
 class ExpenseManager:

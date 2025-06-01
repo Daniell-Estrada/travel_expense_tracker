@@ -3,7 +3,7 @@ from datetime import date
 from typing import List
 from uuid import UUID
 
-from src.core.domain import Expense
+from core.domain import Expense
 
 
 class ExpenseRepository(ABC):

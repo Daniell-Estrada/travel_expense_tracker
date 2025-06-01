@@ -7,4 +7,5 @@ pluggy==1.6.0
 pytest==8.3.5
 python-dotenv==1.1.0
 requests==2.32.3
+-e git+https://github.com/Daniell-Estrada/travel_expense_tracker.git@5c3dbe07b2b82271ac6f85f30df4b7bde8bae1bf#egg=travel_expense_tracker
 urllib3==2.4.0

@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from uuid import UUID
 
-from src.core.domain import Trip
+from core.domain import Trip
 
 
 class TripRepository(ABC):

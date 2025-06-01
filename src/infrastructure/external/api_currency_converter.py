@@ -2,8 +2,8 @@ import os
 
 import requests
 
-from src.core.interfaces import CurrencyConverter
-from src.infrastructure.exceptions import ConversionError
+from core.interfaces import CurrencyConverter
+from infrastructure.exceptions import ConversionError
 
 
 class ApiCurrencyConverter(CurrencyConverter):

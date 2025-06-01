@@ -1,7 +1,7 @@
 from datetime import date
 from uuid import UUID
 
-from src.core.enums import ExpenseType, PaymentMethod
+from core.enums import ExpenseType, PaymentMethod
 
 
 class Expense:

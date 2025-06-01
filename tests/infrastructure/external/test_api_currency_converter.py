@@ -1,8 +1,8 @@
 from unittest import TestCase
 from unittest.mock import MagicMock, patch
 
-from src.infrastructure.exceptions import ConversionError
-from src.infrastructure.external import ApiCurrencyConverter
+from infrastructure.exceptions import ConversionError
+from infrastructure.external import ApiCurrencyConverter
 
 
 class TestApiCurrencyConverter(TestCase):

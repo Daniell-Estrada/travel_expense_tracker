@@ -189,3 +189,10 @@ pyvenv.cfg
 pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,venv
+
+# Ignorar configuración de IntelliJ IDEA
+.idea/
+*.iml
+
+# Ignorar configuración de VSCode
+.vscode/

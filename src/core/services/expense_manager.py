@@ -84,3 +84,11 @@ class ExpenseManager:
         daily_difference = daily_budget - total_expenses
 
         return daily_difference
+
+    def get_expenses_by_trip_id(self, trip_id: UUID) -> list[Expense]:
+        """
+        Retrieves all expenses associated with a specific trip.
+            :param trip_id: Unique identifier for the trip.
+            :return: List of Expense objects for the specified trip.
+        """
+        return self._expense_repository.get_by_trip_id(trip_id)

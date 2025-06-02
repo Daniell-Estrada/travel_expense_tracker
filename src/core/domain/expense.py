@@ -43,6 +43,14 @@ class Expense:
         self._expense_type: ExpenseType = expense_type
 
     @property
+    def expense_id(self) -> UUID:
+        """
+        Returns the unique identifier for the expense.
+            :return: Unique identifier for the expense.
+        """
+        return self._expense_id
+
+    @property
     def trip_id(self) -> UUID:
         """
         Returns the trip ID associated with the expense.
@@ -59,12 +67,44 @@ class Expense:
         return self._expense_date
 
     @property
+    def original_amount(self) -> float:
+        """
+        Returns the original amount of the expense in the specified currency.
+            :return: Original amount of the expense.
+        """
+        return self._original_amount
+
+    @property
+    def currency(self) -> str:
+        """
+        Returns the currency of the original amount.
+            :return: Currency of the original amount.
+        """
+        return self._currency
+
+    @property
     def converted_amount_cop(self) -> float:
         """
         Returns the converted amount for the expense.
             :return: Amount converted to the trip's currency.
         """
         return self._converted_amount_cop
+
+    @property
+    def payment_method(self) -> PaymentMethod:
+        """
+        Returns the payment method used for the expense.
+            :return: Payment method used for the expense.
+        """
+        return self._payment_method
+
+    @property
+    def expense_type(self) -> ExpenseType:
+        """
+        Returns the type of the expense.
+            :return: Type of the expense (e.g., food, transportation).
+        """
+        return self._expense_type
 
     @converted_amount_cop.setter
     def converted_amount_cop(self, value: float) -> None:

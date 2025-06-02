@@ -42,6 +42,22 @@ class Trip:
         return self._trip_id
 
     @property
+    def start_date(self) -> date:
+        """
+        Returns the start date of the trip.
+            :return: Start date as a date object.
+        """
+        return self._start_date
+
+    @property
+    def end_date(self) -> date:
+        """
+        Returns the end date of the trip.
+            :return: End date as a date object.
+        """
+        return self._end_date
+
+    @property
     def is_international(self) -> bool:
         """
         Indicates if the trip is international.
@@ -50,20 +66,20 @@ class Trip:
         return self._is_international
 
     @property
-    def currency(self) -> str:
-        """
-        Returns the currency of the trip.
-            :return: Currency code as a string.
-        """
-        return self._currency
-
-    @property
     def daily_budget(self) -> float:
         """
         Returns the daily budget for the trip.
             :return: Daily budget as a float.
         """
         return self._daily_budget
+
+    @property
+    def currency(self) -> str:
+        """
+        Returns the currency of the trip.
+            :return: Currency code as a string.
+        """
+        return self._currency
 
     def is_active(self) -> bool:
         """

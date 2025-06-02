@@ -2,6 +2,7 @@ import os
 
 import requests
 
+from config import Settings
 from core.interfaces import CurrencyConverter
 from infrastructure.exceptions import ConversionError
 
@@ -15,7 +16,7 @@ class ApiCurrencyConverter(CurrencyConverter):
 
     def __init__(self) -> None:
         super().__init__()
-        self._api_url = os.getenv("API_URL")
+        self._api_url = Settings().api_url
 
     def convert(self, amount: float, from_currency: str, to_currency: str) -> float:
         """

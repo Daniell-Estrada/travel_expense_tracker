@@ -160,9 +160,11 @@ VITE_API_BASE_URL=
 
 - **VITE_API_BASE_URL**: The base URL where the FastAPI backend is running.
 
-  ```
-  VITE_API_BASE_URL=http://localhost:{port}/api/v1
-  ```
+  - If you run the API on `http://localhost:8000`, set:
+
+    ```
+    VITE_API_BASE_URL=http://localhost:8000/api/v1
+    ```
 
 ---
 
